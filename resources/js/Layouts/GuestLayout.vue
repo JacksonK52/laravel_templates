@@ -1,11 +1,13 @@
 <script setup>
 import { Link } from '@inertiajs/vue3';
-// import NavComponents from '../Components/NavComponents.vue';
+import NavComponent from '@/Components/Frontend/NavComponent.vue';
 </script>
 
 <template>
+    <NavComponent />
+
     <div class="container">
-        <h1>This is Guest Layout</h1>
+
         <slot />
     </div>
 </template>
