@@ -13,6 +13,7 @@ Route::get('/', [FrontendController::class, 'index'])->name('index');
 Route::middleware(['guest'])->group(function() {
     Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
     Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
+    Route::post('/register', [RegisterController::class, 'register'])->name('register');
 });
 
 
@@ -20,6 +21,6 @@ Route::middleware(['guest'])->group(function() {
 //     return Inertia::render('WelcomeView');
 // });
 
-Auth::routes();
+// Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
