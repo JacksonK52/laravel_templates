@@ -2,6 +2,7 @@ import './bootstrap';
 
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
+import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m';
 import AuthLayout from '@/Layouts/AuthLayout.vue';
 
 createInertiaApp({
@@ -14,6 +15,7 @@ createInertiaApp({
   setup({ el, App, props, plugin }) {
     createApp({ render: () => h(App, props) })
       .use(plugin)
+      .use(ZiggyVue)
       .mount(el)
   },
 })
