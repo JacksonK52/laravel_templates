@@ -5,3 +5,5 @@
 - Bootstrap 5
 - Inertia 1
 - Vue 3
+
+https://www.youtube.com/playlist?list=PL-ZNi28qdk9WCvO2lES92EAcOAbVfFyyR

@@ -14,15 +14,15 @@ import { Link } from '@inertiajs/vue3';
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <!-- Home -->
                     <li class="nav-item">
-                        <Link class="nav-link" :class="{ 'active': $page.url === '/' }" aria-current="page" href="/">Home</Link>
+                        <Link class="nav-link" :class="{ 'active': $page.url === '/' }" aria-current="page" :href="route('index')">Home</Link>
                     </li>
                     <!-- Login -->
                     <li class="nav-item">
-                        <a class="nav-link" :class="{ 'active': $page.url === '/login' }" href="/login">Login</a>
+                        <a class="nav-link" :class="{ 'active': $page.url === '/login' }" :href="route('login')">Login</a>
                     </li>
                     <!-- Register -->
                     <li class="nav-item">
-                        <a class="nav-link" :class="{ 'active': $page.url === '/register' }" href="/register">Register</a>
+                        <a class="nav-link" :class="{ 'active': $page.url === '/register' }" :href="route('register')">Register</a>
                     </li>
                 </ul>
             </div>
