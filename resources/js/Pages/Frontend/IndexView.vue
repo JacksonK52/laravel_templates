@@ -4,7 +4,7 @@ import GuestLayout from '../../Layouts/GuestLayout.vue';
 </script>
 
 <template>
-    <h1 class="bg-primary">Test</h1>
+    <h1>This is the landing page</h1>
 </template>
 
 <script>
